@@ -1,0 +1,21 @@
+<!Doctype html>
+<html>
+  <head>
+    <title>My First Flask App: CareerWebsite</title>
+    <style></style>
+  </head>
+  <body>
+    <h1>{{company_name}}</h1>
+    <img src="https://30dc46f7-44e5-4df7-8502-55bd9ab03a3c-00-3tsaretbjrhxz.janeway.replit.dev/static/career.jpg"  height="320"
+      alt="Image"/>
+    <h1>About the Career Page</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+    <h2>Open Positions</h2>
+    <div>{%for job  in jobs%}
+      {%include 'jobs.html'%}
+    <br style="color:black"/>
+    {% endfor %}</div>
+    
+    <button>Contact Us</button>
+  </body>
+</html>
